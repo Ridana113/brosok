@@ -13,20 +13,21 @@ namespace brosok
     public partial class Form1 : Form
     {
        const float Pi = 3.14F, g = 9.8F;
-         float x, y, x0, y0, v, v0, vx0, vy0, vx, vy, alpha0, ax, ay, t, dt, Xmax, Ymax, Vmax;
+       float x, y, x0, y0, v, v0, vx0, vy0, vx, vy, alpha0, ax, ay, t, dt;
 
         Color PixColor;
-        private void button4_Click(object sender, EventArgs e)//перезапуск
+        private void Perezapusk_Click(object sender, EventArgs e)//перезапуск
         {
             timer1.Enabled = false;
             timer2.Enabled = false;
             int z = 0;
-            textBox1.Text = Convert.ToString(z);
-            textBox2.Text = Convert.ToString(z);
-            textBox3.Text = Convert.ToString(z);
-            textBox4.Text = Convert.ToString(z);
-            axis1.Dispose(); //попытка очистить axis, к сожелению неуспешная, поэтому перезапуск формы
-            Application.Restart();
+            ygol_alpha.Text = Convert.ToString(z);
+            Speed_0.Text = Convert.ToString(z);
+            time_dt.Text = Convert.ToString(z);
+            Hight.Text = Convert.ToString(z);
+            axis1.ClearDin();
+            axis1.ClearPic();            //очистка axis, 
+            x = 0; y = 0;t = 0;
         }
 
         public Form1()
@@ -51,23 +52,21 @@ namespace brosok
            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Start_Click(object sender, EventArgs e)
         {
             
             try
             {
-               alpha0 = Convert.ToSingle(textBox1.Text);
-            v0 = Convert.ToSingle(textBox2.Text);
-            dt = Convert.ToSingle(textBox3.Text);
-            t = 0;
-            v = v0;
-            vx0 = v0 * (float)(Math.Cos(alpha0 * Pi / 180));
-            vy0 = v0 * (float)(Math.Sin(alpha0 * Pi / 180))-g*t;
-        x0 = 0;
-            y0 = Convert.ToSingle(textBox4.Text);
-            Vmax = v0;
-            Xmax = x0;
-            Ymax = y0;
+                alpha0 = Convert.ToSingle(ygol_alpha.Text);
+                v0 = Convert.ToSingle(Speed_0.Text);
+                dt = Convert.ToSingle(time_dt.Text);
+                t = 0;
+                v = v0;
+                vx0 = v0 * (float)(Math.Cos(alpha0 * Pi / 180));
+                vy0 = v0 * (float)(Math.Sin(alpha0 * Pi / 180))-g*t;
+                x0 = 0;
+                y0 = Convert.ToSingle(Hight.Text);
+            
                 if (alpha0 < 0 || dt < 0 || v0 < 0|| y0 < 0)
                 {
                     timer2.Stop();
@@ -80,13 +79,13 @@ namespace brosok
                 timer1.Stop();
                 timer2.Stop();
                 MessageBox.Show("Уважаемый пользователь, пожалуйста, введите ЧИСЛО!");
-                textBox1.Select();
-                textBox2.Select();
+                ygol_alpha.Select();
+                Speed_0.Select();
                 int z = 0;
-                textBox1.Text = Convert.ToString(z);
-                textBox2.Text = Convert.ToString(z);
-                textBox3.Text = Convert.ToString(z);
-                textBox4.Text = Convert.ToString(z);
+                ygol_alpha.Text = Convert.ToString(z);
+                Speed_0.Text = Convert.ToString(z);
+                time_dt.Text = Convert.ToString(z);
+                Hight.Text = Convert.ToString(z);
                 return;
             }
             timer1.Enabled = true;
@@ -96,7 +95,7 @@ namespace brosok
         private void timer1_Tick(object sender, EventArgs e)
         {
             t = t + dt;
-        if (checkBox1.Checked)
+        if (Sopritivleni_on_off.Checked)
             {
                 ax = -v * vx;
                 ay = -1 - v * vy;
@@ -124,7 +123,7 @@ namespace brosok
                     }
             }
       
-        private void button3_Click(object sender, EventArgs e)
+        private void sozdanie_osey_Click(object sender, EventArgs e)
         {
             timer2.Enabled = true;
         }
@@ -141,7 +140,7 @@ namespace brosok
             axis1.PixDraw(x, y, Color.Yellow, 2);
             axis1.DinToPic();
         }
-        private void button2_Click(object sender, EventArgs e)//стоп
+        private void Stop_Click(object sender, EventArgs e)//стоп
         {
             timer1.Enabled = false;
             timer2.Enabled = false;

@@ -30,21 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             this.axis1 = new myUCLib.Axis();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Start = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ygol_alpha = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Speed_0 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.time_dt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Hight = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Stop = new System.Windows.Forms.Button();
+            this.sozdanie_osey = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.button4 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.Perezapusk = new System.Windows.Forms.Button();
+            this.Sopritivleni_on_off = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -76,17 +76,17 @@
             this.axis1.y_Name = "Y";
             this.axis1.Load += new System.EventHandler(this.axis1_Load);
             // 
-            // button1
+            // Start
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.ForeColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(184, 88);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 29);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Старт";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Start.BackColor = System.Drawing.Color.Black;
+            this.Start.ForeColor = System.Drawing.Color.Lime;
+            this.Start.Location = new System.Drawing.Point(184, 88);
+            this.Start.Name = "Start";
+            this.Start.Size = new System.Drawing.Size(100, 29);
+            this.Start.TabIndex = 1;
+            this.Start.Text = "Старт";
+            this.Start.UseVisualStyleBackColor = false;
+            this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
             // label1
             // 
@@ -98,27 +98,27 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Начальная скорость тела";
             // 
-            // textBox1
+            // ygol_alpha
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Black;
-            this.textBox1.ForeColor = System.Drawing.Color.Lime;
-            this.textBox1.Location = new System.Drawing.Point(17, 178);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.ygol_alpha.BackColor = System.Drawing.Color.Black;
+            this.ygol_alpha.ForeColor = System.Drawing.Color.Lime;
+            this.ygol_alpha.Location = new System.Drawing.Point(17, 178);
+            this.ygol_alpha.Name = "ygol_alpha";
+            this.ygol_alpha.Size = new System.Drawing.Size(100, 20);
+            this.ygol_alpha.TabIndex = 3;
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // textBox2
+            // Speed_0
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Black;
-            this.textBox2.ForeColor = System.Drawing.Color.Lime;
-            this.textBox2.Location = new System.Drawing.Point(17, 214);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.Speed_0.BackColor = System.Drawing.Color.Black;
+            this.Speed_0.ForeColor = System.Drawing.Color.Lime;
+            this.Speed_0.Location = new System.Drawing.Point(17, 214);
+            this.Speed_0.Name = "Speed_0";
+            this.Speed_0.Size = new System.Drawing.Size(100, 20);
+            this.Speed_0.TabIndex = 4;
             // 
             // label2
             // 
@@ -130,14 +130,14 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Угол броска тела  α";
             // 
-            // textBox3
+            // time_dt
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Black;
-            this.textBox3.ForeColor = System.Drawing.Color.Lime;
-            this.textBox3.Location = new System.Drawing.Point(17, 250);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.time_dt.BackColor = System.Drawing.Color.Black;
+            this.time_dt.ForeColor = System.Drawing.Color.Lime;
+            this.time_dt.Location = new System.Drawing.Point(17, 250);
+            this.time_dt.Name = "time_dt";
+            this.time_dt.Size = new System.Drawing.Size(100, 20);
+            this.time_dt.TabIndex = 6;
             // 
             // label3
             // 
@@ -149,14 +149,14 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "dt (рекомендуется 0,1)";
             // 
-            // textBox4
+            // Hight
             // 
-            this.textBox4.BackColor = System.Drawing.Color.Black;
-            this.textBox4.ForeColor = System.Drawing.Color.Lime;
-            this.textBox4.Location = new System.Drawing.Point(17, 286);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 8;
+            this.Hight.BackColor = System.Drawing.Color.Black;
+            this.Hight.ForeColor = System.Drawing.Color.Lime;
+            this.Hight.Location = new System.Drawing.Point(17, 286);
+            this.Hight.Name = "Hight";
+            this.Hight.Size = new System.Drawing.Size(100, 20);
+            this.Hight.TabIndex = 8;
             // 
             // label4
             // 
@@ -168,56 +168,56 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Высота";
             // 
-            // button2
+            // Stop
             // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.ForeColor = System.Drawing.Color.Lime;
-            this.button2.Location = new System.Drawing.Point(17, 392);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 29);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Стоп";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Stop.BackColor = System.Drawing.Color.Black;
+            this.Stop.ForeColor = System.Drawing.Color.Lime;
+            this.Stop.Location = new System.Drawing.Point(17, 392);
+            this.Stop.Name = "Stop";
+            this.Stop.Size = new System.Drawing.Size(95, 29);
+            this.Stop.TabIndex = 11;
+            this.Stop.Text = "Стоп";
+            this.Stop.UseVisualStyleBackColor = false;
+            this.Stop.Click += new System.EventHandler(this.Stop_Click);
             // 
-            // button3
+            // sozdanie_osey
             // 
-            this.button3.BackColor = System.Drawing.Color.Black;
-            this.button3.ForeColor = System.Drawing.Color.Magenta;
-            this.button3.Location = new System.Drawing.Point(17, 81);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 43);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Создание осей и тела";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.sozdanie_osey.BackColor = System.Drawing.Color.Black;
+            this.sozdanie_osey.ForeColor = System.Drawing.Color.Magenta;
+            this.sozdanie_osey.Location = new System.Drawing.Point(17, 81);
+            this.sozdanie_osey.Name = "sozdanie_osey";
+            this.sozdanie_osey.Size = new System.Drawing.Size(122, 43);
+            this.sozdanie_osey.TabIndex = 12;
+            this.sozdanie_osey.Text = "Создание осей и тела";
+            this.sozdanie_osey.UseVisualStyleBackColor = false;
+            this.sozdanie_osey.Click += new System.EventHandler(this.sozdanie_osey_Click);
             // 
             // timer2
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // button4
+            // Perezapusk
             // 
-            this.button4.BackColor = System.Drawing.Color.Black;
-            this.button4.ForeColor = System.Drawing.Color.Lime;
-            this.button4.Location = new System.Drawing.Point(17, 439);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 29);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Перезапуск";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.Perezapusk.BackColor = System.Drawing.Color.Black;
+            this.Perezapusk.ForeColor = System.Drawing.Color.Lime;
+            this.Perezapusk.Location = new System.Drawing.Point(17, 439);
+            this.Perezapusk.Name = "Perezapusk";
+            this.Perezapusk.Size = new System.Drawing.Size(95, 29);
+            this.Perezapusk.TabIndex = 13;
+            this.Perezapusk.Text = "Перезапуск";
+            this.Perezapusk.UseVisualStyleBackColor = false;
+            this.Perezapusk.Click += new System.EventHandler(this.Perezapusk_Click);
             // 
-            // checkBox1
+            // Sopritivleni_on_off
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.ForeColor = System.Drawing.Color.Yellow;
-            this.checkBox1.Location = new System.Drawing.Point(17, 344);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(147, 17);
-            this.checkBox1.TabIndex = 14;
-            this.checkBox1.Text = "Сопротивление воздуха";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.Sopritivleni_on_off.AutoSize = true;
+            this.Sopritivleni_on_off.ForeColor = System.Drawing.Color.Yellow;
+            this.Sopritivleni_on_off.Location = new System.Drawing.Point(17, 344);
+            this.Sopritivleni_on_off.Name = "Sopritivleni_on_off";
+            this.Sopritivleni_on_off.Size = new System.Drawing.Size(147, 17);
+            this.Sopritivleni_on_off.TabIndex = 14;
+            this.Sopritivleni_on_off.Text = "Сопротивление воздуха";
+            this.Sopritivleni_on_off.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -282,19 +282,19 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Sopritivleni_on_off);
+            this.Controls.Add(this.Perezapusk);
+            this.Controls.Add(this.sozdanie_osey);
+            this.Controls.Add(this.Stop);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.Hight);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.time_dt);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Speed_0);
+            this.Controls.Add(this.ygol_alpha);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Start);
             this.Controls.Add(this.axis1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -307,21 +307,21 @@
         #endregion
 
         private myUCLib.Axis axis1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Start;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ygol_alpha;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Speed_0;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox time_dt;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox Hight;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Stop;
+        private System.Windows.Forms.Button sozdanie_osey;
         private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button Perezapusk;
+        private System.Windows.Forms.CheckBox Sopritivleni_on_off;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
