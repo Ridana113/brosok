@@ -12,8 +12,23 @@ namespace brosok
 {
     public partial class Form1 : Form
     {
-       const float Pi = 3.14F, g = 9.8F;
-       float x, y, x0, y0, v, v0, vx0, vy0, vx, vy, alpha0, ax, ay, t, dt;
+        const float Pi = 3.14F;
+        const float g = 9.8F;
+        float x;
+        float y;
+        float x0;
+        float y0;
+        float v;
+        float v0;
+        float vx0;
+        float vy0;
+        float vx;
+        float vy;
+        float alpha0;
+        float ax;
+        float ay;
+        float t;
+        float dt;
 
         Color PixColor;
         private void Perezapusk_Click(object sender, EventArgs e)//перезапуск
