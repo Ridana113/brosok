@@ -42,7 +42,9 @@ namespace brosok
             Hight.Text = Convert.ToString(z);
             axis1.ClearDin();
             axis1.ClearPic();            //очистка axis, 
-            x = 0; y = 0;t = 0;
+            x = 0;
+            y = 0;
+            t = 0;
         }
 
         public Form1()
