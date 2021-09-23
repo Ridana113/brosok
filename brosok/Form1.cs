@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace brosok
 {
@@ -56,7 +51,7 @@ namespace brosok
         private void axis1_Load(object sender, EventArgs e)
         {
             
-            axis1.PixDraw(2, 2, Color.Aqua, 1);
+            axis1.PixDraw(2, 2, Color.Navy, 1);
             axis1.Axis_Type = 1;
             axis1.x_Name = "Ox";
             axis1.y_Name = "Oy"; //если поменять фон на белый, то надписи будут видны, но цвет шрифта не удалось поменять
@@ -67,6 +62,10 @@ namespace brosok
             axis1.StatToDin();
             
            
+        }
+        public void playExclamation()
+        {
+            SystemSounds.Exclamation.Play();
         }
 
         private void Start_Click(object sender, EventArgs e)
@@ -88,14 +87,17 @@ namespace brosok
                 {
                     timer2.Stop();
                     timer1.Stop();
-                    MessageBox.Show("Уважаемый пользователь, пожалуйста, введите все величины в виде положительного числа");
+                    playExclamation();
+                    MessageBox.Show("ВВЕДИ ДАННЫЕ НОРМАЛЬНО, МЕШОК ИЗ МЯСА!!!");
+                    
                 }
             }
             catch (FormatException)
             {
                 timer1.Stop();
                 timer2.Stop();
-                MessageBox.Show("Уважаемый пользователь, пожалуйста, введите ЧИСЛО!");
+                playExclamation();
+                MessageBox.Show("Эй, слющай, ЧИСЛА нормально сдэлай");
                 ygol_alpha.Select();
                 Speed_0.Select();
                 int z = 0;
@@ -116,13 +118,13 @@ namespace brosok
             {
                 ax = -v * vx;
                 ay = -1 - v * vy;
-                PixColor = Color.Magenta;
+                PixColor = Color.Red;
             }
             else
             { 
                 ax = 0;
                 ay = -1;
-                PixColor = Color.Aqua; 
+                PixColor = Color.Green; 
             }
             vx = vx0 + ax * dt;
                 vy = vy0 + ay * dt;

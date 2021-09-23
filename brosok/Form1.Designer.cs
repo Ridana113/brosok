@@ -45,7 +45,6 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.Perezapusk = new System.Windows.Forms.Button();
             this.Sopritivleni_on_off = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -54,17 +53,17 @@
             // 
             // axis1
             // 
-            this.axis1.axis_bkcolor = System.Drawing.Color.Black;
-            this.axis1.axis_color = System.Drawing.Color.White;
+            this.axis1.axis_bkcolor = System.Drawing.Color.Gainsboro;
+            this.axis1.axis_color = System.Drawing.Color.Black;
             this.axis1.Axis_Type = ((byte)(1));
-            this.axis1.BackColor = System.Drawing.Color.Transparent;
+            this.axis1.BackColor = System.Drawing.Color.White;
             this.axis1.E_x = 0;
             this.axis1.E_y = 0;
             this.axis1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.axis1.ForeColor = System.Drawing.Color.Yellow;
+            this.axis1.ForeColor = System.Drawing.Color.DimGray;
             this.axis1.Location = new System.Drawing.Point(339, 37);
             this.axis1.Name = "axis1";
-            this.axis1.Pix_color = System.Drawing.Color.White;
+            this.axis1.Pix_color = System.Drawing.Color.Maroon;
             this.axis1.Pix_Size = 2F;
             this.axis1.Pix_type = ((byte)(1));
             this.axis1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -78,8 +77,8 @@
             // 
             // Start
             // 
-            this.Start.BackColor = System.Drawing.Color.Black;
-            this.Start.ForeColor = System.Drawing.Color.Lime;
+            this.Start.BackColor = System.Drawing.Color.White;
+            this.Start.ForeColor = System.Drawing.Color.Black;
             this.Start.Location = new System.Drawing.Point(184, 88);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(100, 29);
@@ -91,7 +90,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(129, 217);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 13);
@@ -100,7 +99,7 @@
             // 
             // ygol_alpha
             // 
-            this.ygol_alpha.BackColor = System.Drawing.Color.Black;
+            this.ygol_alpha.BackColor = System.Drawing.Color.White;
             this.ygol_alpha.ForeColor = System.Drawing.Color.Lime;
             this.ygol_alpha.Location = new System.Drawing.Point(17, 178);
             this.ygol_alpha.Name = "ygol_alpha";
@@ -113,7 +112,7 @@
             // 
             // Speed_0
             // 
-            this.Speed_0.BackColor = System.Drawing.Color.Black;
+            this.Speed_0.BackColor = System.Drawing.Color.White;
             this.Speed_0.ForeColor = System.Drawing.Color.Lime;
             this.Speed_0.Location = new System.Drawing.Point(17, 214);
             this.Speed_0.Name = "Speed_0";
@@ -123,7 +122,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(129, 181);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 13);
@@ -132,7 +131,7 @@
             // 
             // time_dt
             // 
-            this.time_dt.BackColor = System.Drawing.Color.Black;
+            this.time_dt.BackColor = System.Drawing.Color.White;
             this.time_dt.ForeColor = System.Drawing.Color.Lime;
             this.time_dt.Location = new System.Drawing.Point(17, 250);
             this.time_dt.Name = "time_dt";
@@ -142,7 +141,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Yellow;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(129, 253);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 13);
@@ -151,7 +150,7 @@
             // 
             // Hight
             // 
-            this.Hight.BackColor = System.Drawing.Color.Black;
+            this.Hight.BackColor = System.Drawing.Color.White;
             this.Hight.ForeColor = System.Drawing.Color.Lime;
             this.Hight.Location = new System.Drawing.Point(17, 286);
             this.Hight.Name = "Hight";
@@ -161,7 +160,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Yellow;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(129, 293);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 13);
@@ -170,8 +169,8 @@
             // 
             // Stop
             // 
-            this.Stop.BackColor = System.Drawing.Color.Black;
-            this.Stop.ForeColor = System.Drawing.Color.Lime;
+            this.Stop.BackColor = System.Drawing.Color.White;
+            this.Stop.ForeColor = System.Drawing.Color.Red;
             this.Stop.Location = new System.Drawing.Point(17, 392);
             this.Stop.Name = "Stop";
             this.Stop.Size = new System.Drawing.Size(95, 29);
@@ -182,8 +181,8 @@
             // 
             // sozdanie_osey
             // 
-            this.sozdanie_osey.BackColor = System.Drawing.Color.Black;
-            this.sozdanie_osey.ForeColor = System.Drawing.Color.Magenta;
+            this.sozdanie_osey.BackColor = System.Drawing.Color.White;
+            this.sozdanie_osey.ForeColor = System.Drawing.Color.Black;
             this.sozdanie_osey.Location = new System.Drawing.Point(17, 81);
             this.sozdanie_osey.Name = "sozdanie_osey";
             this.sozdanie_osey.Size = new System.Drawing.Size(122, 43);
@@ -198,8 +197,8 @@
             // 
             // Perezapusk
             // 
-            this.Perezapusk.BackColor = System.Drawing.Color.Black;
-            this.Perezapusk.ForeColor = System.Drawing.Color.Lime;
+            this.Perezapusk.BackColor = System.Drawing.Color.White;
+            this.Perezapusk.ForeColor = System.Drawing.Color.Navy;
             this.Perezapusk.Location = new System.Drawing.Point(17, 439);
             this.Perezapusk.Name = "Perezapusk";
             this.Perezapusk.Size = new System.Drawing.Size(95, 29);
@@ -211,7 +210,7 @@
             // Sopritivleni_on_off
             // 
             this.Sopritivleni_on_off.AutoSize = true;
-            this.Sopritivleni_on_off.ForeColor = System.Drawing.Color.Yellow;
+            this.Sopritivleni_on_off.ForeColor = System.Drawing.Color.Black;
             this.Sopritivleni_on_off.Location = new System.Drawing.Point(17, 344);
             this.Sopritivleni_on_off.Name = "Sopritivleni_on_off";
             this.Sopritivleni_on_off.Size = new System.Drawing.Size(147, 17);
@@ -219,23 +218,11 @@
             this.Sopritivleni_on_off.Text = "Сопротивление воздуха";
             this.Sopritivleni_on_off.UseVisualStyleBackColor = true;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.ForeColor = System.Drawing.Color.Yellow;
-            this.label5.Location = new System.Drawing.Point(36, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(675, 13);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "ПРИ ИСПОЛЬЗОВАНИИ СОПРОТИВЛЕНИЯ ВОЗДУХА dt ВЫБРАТЬ 0,05 (процесс будет идти долго" +
-    ", зато будет видна траектория)";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Yellow;
-            this.label6.Location = new System.Drawing.Point(778, 51);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(908, 48);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 13);
             this.label6.TabIndex = 16;
@@ -244,7 +231,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Yellow;
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(1128, 381);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(47, 13);
@@ -254,7 +241,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.Yellow;
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(26, 505);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(287, 13);
@@ -264,7 +251,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.Yellow;
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(-4, 527);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(339, 13);
@@ -275,13 +262,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1206, 736);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.Sopritivleni_on_off);
             this.Controls.Add(this.Perezapusk);
             this.Controls.Add(this.sozdanie_osey);
@@ -322,7 +308,6 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button Perezapusk;
         private System.Windows.Forms.CheckBox Sopritivleni_on_off;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
