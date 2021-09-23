@@ -100,7 +100,7 @@
             // ygol_alpha
             // 
             this.ygol_alpha.BackColor = System.Drawing.Color.White;
-            this.ygol_alpha.ForeColor = System.Drawing.Color.Lime;
+            this.ygol_alpha.ForeColor = System.Drawing.Color.Black;
             this.ygol_alpha.Location = new System.Drawing.Point(17, 178);
             this.ygol_alpha.Name = "ygol_alpha";
             this.ygol_alpha.Size = new System.Drawing.Size(100, 20);
@@ -113,7 +113,7 @@
             // Speed_0
             // 
             this.Speed_0.BackColor = System.Drawing.Color.White;
-            this.Speed_0.ForeColor = System.Drawing.Color.Lime;
+            this.Speed_0.ForeColor = System.Drawing.Color.Black;
             this.Speed_0.Location = new System.Drawing.Point(17, 214);
             this.Speed_0.Name = "Speed_0";
             this.Speed_0.Size = new System.Drawing.Size(100, 20);
@@ -132,7 +132,7 @@
             // time_dt
             // 
             this.time_dt.BackColor = System.Drawing.Color.White;
-            this.time_dt.ForeColor = System.Drawing.Color.Lime;
+            this.time_dt.ForeColor = System.Drawing.Color.Black;
             this.time_dt.Location = new System.Drawing.Point(17, 250);
             this.time_dt.Name = "time_dt";
             this.time_dt.Size = new System.Drawing.Size(100, 20);
@@ -151,7 +151,7 @@
             // Hight
             // 
             this.Hight.BackColor = System.Drawing.Color.White;
-            this.Hight.ForeColor = System.Drawing.Color.Lime;
+            this.Hight.ForeColor = System.Drawing.Color.Black;
             this.Hight.Location = new System.Drawing.Point(17, 286);
             this.Hight.Name = "Hight";
             this.Hight.Size = new System.Drawing.Size(100, 20);
